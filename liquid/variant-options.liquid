@@ -1,0 +1,10 @@
+</> liquid
+
+{% for option in product.options_with_values %}
+  <label>({ option.name })</label>
+  <select>
+    {% for value in option.values %}
+      <option>({ value })</option>
+    {% endfor %}
+  </select>
+{% endfor %}
